@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Art Generator</title>
+    <!-- Google Fonts Preload -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" as="style" onload="this.rel='stylesheet'" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <section class="options" aria-label="Pixel Art Controls">
+        <div class="opt-wrapper">
+          <div class="slider">
+            <label for="width-range">Grid Width</label>
+            <input type="range" id="width-range" min="1" max="35" aria-label="Grid Width Slider" />
+            <span id="width-value">00</span>
+          </div>
+          <div class="slider">
+            <label for="height-range">Grid Height</label>
+            <input type="range" id="height-range" min="1" max="35" aria-label="Grid Height Slider" />
+            <span id="height-value">00</span>
+          </div>
+        </div>
+        <div class="opt-wrapper">
+          <button id="submit-grid" aria-label="Create Grid">Create Grid</button>
+          <button id="clear-grid" aria-label="Clear Grid">Clear Grid</button>
+          <input type="color" id="color-input" aria-label="Color Picker" />
+          <button id="erase-btn" aria-label="Erase Mode">Erase</button>
+          <button id="paint-btn" aria-label="Paint Mode">Paint</button>
+        </div>
+      </section>
+      <section class="container" aria-label="Pixel Art Canvas"></section>
+    </main>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

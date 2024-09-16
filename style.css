@@ -1,0 +1,91 @@
+/* CSS Variables for better maintainability */
+:root {
+  --primary-color: #102ed4;
+  --background-color: #42d2f7;
+  --font-color: #ffffff;
+  --button-padding: 4px 7px;
+  --grid-border-color: #ddd;
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.wrapper {
+  background-color: #ffffff;
+  width: 80vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 40px 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+}
+
+span {
+  font-size: 22px;
+  position: relative;
+  bottom: -1px;
+}
+
+.opt-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--font-color);
+  border-radius: 5px;
+  padding: var(--button-padding);
+  cursor: pointer;
+}
+
+input[type="color"] {
+  appearance: none;
+  background-color: transparent;
+  width: 70px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch,
+input[type="color"]::-moz-color-swatch {
+  border-radius: 8px;
+  border: 2px solid #000000;
+}
+
+.gridCol {
+  height: 1em;
+  width: 1em;
+  border: 1px solid var(--grid-border-color);
+}
+
+.gridRow {
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .gridCol {
+    height: 0.8em;
+    width: 0.8em;
+  }
+}
