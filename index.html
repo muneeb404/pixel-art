@@ -6,6 +6,7 @@
     <title>Pixel Art Generator</title>
     <!-- Google Fonts Preload -->
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="crown.png" type="image/x-icon">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" as="style" onload="this.rel='stylesheet'" />
   </head>
   <body>
@@ -14,13 +15,16 @@
         <div class="opt-wrapper">
           <div class="slider">
             <label for="width-range">Grid Width</label>
-            <input type="range" id="width-range" min="1" max="35" aria-label="Grid Width Slider" />
+            <input type="range" id="width-range" min="1" max="40" aria-label="Grid Width Slider" />
             <span id="width-value">00</span>
           </div>
           <div class="slider">
             <label for="height-range">Grid Height</label>
-            <input type="range" id="height-range" min="1" max="35" aria-label="Grid Height Slider" />
+            <input type="range" id="height-range" min="1" max="30" aria-label="Grid Height Slider" />
             <span id="height-value">00</span>
+          </div>
+          <div class="download">
+            <img id="download-icon" src="image.png" alt="Download Pixel Art">
           </div>
         </div>
         <div class="opt-wrapper">

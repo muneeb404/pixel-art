@@ -21,13 +21,15 @@ body {
 
 .wrapper {
   background-color: #ffffff;
-  width: 80vmin;
+  /* Removed fixed width to allow the wrapper to grow */
+  max-width: 100%; /* Ensure the wrapper does not exceed the screen width */
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 53%;
   left: 50%;
-  padding: 40px 20px;
+  padding: 30px 20px;
   border-radius: 8px;
+  overflow-x: auto; /* In case the grid overflows, enable horizontal scrolling */
 }
 
 label {
@@ -47,6 +49,18 @@ span {
   margin-bottom: 20px;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.download img{
+  width: 2rem;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.gridCol {
+  height: 1em;
+  width: 1em;
+  border: 1px solid var(--grid-border-color);
 }
 
 button {
